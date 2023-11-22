@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-class StartScreen extends StatefulWidget {
-  const StartScreen({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen(this.startQuiz, {super.key});
 
-  @override
-  State<StartScreen> createState() => _StartScreenState();
-}
+  final void Function() startQuiz;
 
-class _StartScreenState extends State<StartScreen> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -33,7 +30,7 @@ class _StartScreenState extends State<StartScreen> {
             height: 30,
           ),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: startQuiz,
             style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
             icon: const Icon(Icons.arrow_right_alt),
             label: const Text('Start Quiz'),
