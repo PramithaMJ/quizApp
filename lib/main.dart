@@ -4,3 +4,5 @@ import 'package:quizapp/quiz.dart';
 void main() {
   runApp(const Quiz());
 }
+
+// 72
