@@ -41,7 +41,7 @@ class _QusestionScreenState extends State<QusestionScreen> {
             const SizedBox(
               height: 30,
             ),
-            ...currentQuestion.getShuffledAnswer().map(
+            ...currentQuestion.shuffledAnswer.map(
               (answer) {
                 return AnswerButton(
                   answerText: answer,
