@@ -10,4 +10,3 @@ class QuizQuestion {
     return shuffledList;
   }
 }
-//76
