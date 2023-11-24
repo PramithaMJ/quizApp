@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/questions_summary/question_identifier.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Summaryitem extends StatelessWidget {
   const Summaryitem(this.itemData, {super.key});
@@ -25,12 +26,12 @@ class Summaryitem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                itemData['question'] as String,
-                // style: GoogleFonts.lato(
-                //   color: Colors.white,
-                //   fontSize: 16,
-                //   FontWeight: FontWeight.bold,
-                // ),
+                itemData['qusetion'] as String,
+                style: GoogleFonts.lato(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(
                 height: 5,
